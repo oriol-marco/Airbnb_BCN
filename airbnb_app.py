@@ -129,17 +129,3 @@ st.write("486 is the highest number of reviews and two properties have it. Both 
     neighborhood and are private rooms with prices $65 and $45. \
     In general, listings with >400 reviews are priced below $100. \
     A few are between $100 and $200, and only one is priced above $200.")
-st.header("Images")
-pics = {
-    "Cat": "https://cdn.pixabay.com/photo/2016/09/24/22/20/cat-1692702_960_720.jpg",
-    "Puppy": "https://cdn.pixabay.com/photo/2019/03/15/19/19/puppy-4057786_960_720.jpg",
-    "Sci-fi city": "https://storage.needpix.com/rsynced_images/science-fiction-2971848_1280.jpg"
-}
-pic = st.selectbox("Picture choices", list(pics.keys()), 0)
-st.image(pics[pic], use_column_width=True, caption=pics[pic])
-
-st.markdown("## Party time!")
-st.write("Yay! You're done with this tutorial of Streamlit. Click below to celebrate.")
-btn = st.button("Celebrate!")
-if btn:
-    st.balloons()
